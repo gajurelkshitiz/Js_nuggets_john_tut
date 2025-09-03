@@ -32,7 +32,16 @@ console.log(arr.map(binary));
 */
 
 
-// Another way 
+// normal function method of doing:
+
+const value = arr.map(function double(x){
+    return x * 2;
+})
+
+console.log(value);
+
+
+// Another way using arrow function:
 
 const output = arr.map((x) => x.toString(2));
 console.log(output);
