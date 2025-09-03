@@ -33,3 +33,12 @@ const countAge = users.reduce((acc, curr) => {
 
 console.log(countAge);
 
+
+
+// first name of all people, whose age is less(<) than 30
+
+const firstNameUnder30 = users
+    .filter((user) => user.age < 30)
+    .map((user) => user.firstname);
+
+console.log(firstNameUnder30);
